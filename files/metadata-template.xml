@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="apigee-saml-login-opdk"
+                     entityID="apigee-saml-login-opdk">
+    <md:SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="false"
+                        protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <md:KeyDescriptor use="signing">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIC0jCCAjugAwIBAgIJAK1nzEhGvDQWMA0GCSqGSIb3DQEBCwUAMIGBMQswCQYDVQQGEwJVUzEL
+                        MAkGA1UECAwCQ0ExEjAQBgNVBAcMCVN1bm55dmFsZTEPMA0GA1UECgwGQXBpZ2VlMQswCQYDVQQL
+                        DAJDUzEQMA4GA1UEAwwHZHlub2xhYjEhMB8GCSqGSIb3DQEJARYSbm9yZXBseUBhcGlnZWUuY29t
+                        MB4XDTE4MDIyMzA2MjEwNloXDTE5MDIyMzA2MjEwNlowgYExCzAJBgNVBAYTAlVTMQswCQYDVQQI
+                        DAJDQTESMBAGA1UEBwwJU3Vubnl2YWxlMQ8wDQYDVQQKDAZBcGlnZWUxCzAJBgNVBAsMAkNTMRAw
+                        DgYDVQQDDAdkeW5vbGFiMSEwHwYJKoZIhvcNAQkBFhJub3JlcGx5QGFwaWdlZS5jb20wgZ8wDQYJ
+                        KoZIhvcNAQEBBQADgY0AMIGJAoGBAOypT9GYABqKPXXELFSJ8QrkHlR/wmlCM9QBXsTt7v1XxTyK
+                        yd7N9BAXc50vI1KdW8nJ8AXlejyUobnVP1qpjOHUfg1JxYGHx5sd1DL9tAFZhjHgms5VmxoW2S8H
+                        yxl7mUnT4lyFimtIi6Pl1rH5MUzcpErSKhZbPNzAhxyYbgbhAgMBAAGjUDBOMB0GA1UdDgQWBBRv
+                        JQLnOmR5cY7U5E/Dhbn8Lc6EmTAfBgNVHSMEGDAWgBRvJQLnOmR5cY7U5E/Dhbn8Lc6EmTAMBgNV
+                        HRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4GBAA87H+rypbiWeEtF7iwhquxudoNLa7iMWM0dpq1O
+                        hQuwusCyQEEt9yZXkvkp7vmJnkTDWPT3LH/Jw90yEel4ig1Zl9JmAaadSKxfIdLw/3sv8+f0pKJE
+                        qg2KCf0bMrq+h0zICFKfF8NsG58H3cl2cLNN6u+Ct8pLJpL6J6m2AzMv
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:KeyDescriptor use="encryption">
+            <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+                <ds:X509Data>
+                    <ds:X509Certificate>MIIC0jCCAjugAwIBAgIJAK1nzEhGvDQWMA0GCSqGSIb3DQEBCwUAMIGBMQswCQYDVQQGEwJVUzEL
+                        MAkGA1UECAwCQ0ExEjAQBgNVBAcMCVN1bm55dmFsZTEPMA0GA1UECgwGQXBpZ2VlMQswCQYDVQQL
+                        DAJDUzEQMA4GA1UEAwwHZHlub2xhYjEhMB8GCSqGSIb3DQEJARYSbm9yZXBseUBhcGlnZWUuY29t
+                        MB4XDTE4MDIyMzA2MjEwNloXDTE5MDIyMzA2MjEwNlowgYExCzAJBgNVBAYTAlVTMQswCQYDVQQI
+                        DAJDQTESMBAGA1UEBwwJU3Vubnl2YWxlMQ8wDQYDVQQKDAZBcGlnZWUxCzAJBgNVBAsMAkNTMRAw
+                        DgYDVQQDDAdkeW5vbGFiMSEwHwYJKoZIhvcNAQkBFhJub3JlcGx5QGFwaWdlZS5jb20wgZ8wDQYJ
+                        KoZIhvcNAQEBBQADgY0AMIGJAoGBAOypT9GYABqKPXXELFSJ8QrkHlR/wmlCM9QBXsTt7v1XxTyK
+                        yd7N9BAXc50vI1KdW8nJ8AXlejyUobnVP1qpjOHUfg1JxYGHx5sd1DL9tAFZhjHgms5VmxoW2S8H
+                        yxl7mUnT4lyFimtIi6Pl1rH5MUzcpErSKhZbPNzAhxyYbgbhAgMBAAGjUDBOMB0GA1UdDgQWBBRv
+                        JQLnOmR5cY7U5E/Dhbn8Lc6EmTAfBgNVHSMEGDAWgBRvJQLnOmR5cY7U5E/Dhbn8Lc6EmTAMBgNV
+                        HRMEBTADAQH/MA0GCSqGSIb3DQEBCwUAA4GBAA87H+rypbiWeEtF7iwhquxudoNLa7iMWM0dpq1O
+                        hQuwusCyQEEt9yZXkvkp7vmJnkTDWPT3LH/Jw90yEel4ig1Zl9JmAaadSKxfIdLw/3sv8+f0pKJE
+                        qg2KCf0bMrq+h0zICFKfF8NsG58H3cl2cLNN6u+Ct8pLJpL6J6m2AzMv
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </md:KeyDescriptor>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                Location="http://35.227.76.244:9099/saml/SingleLogout/alias/apigee-saml-login-opdk"/>
+        <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+                                Location="http://35.227.76.244:9099/saml/SingleLogout/alias/apigee-saml-login-opdk"/>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</md:NameIDFormat>
+        <md:NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName</md:NameIDFormat>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+                                     Location="http://35.227.76.244:9099/saml/SSO/alias/apigee-saml-login-opdk"
+                                     index="0" isDefault="true"/>
+        <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+                                     Location="http://35.227.76.244:9099/saml/SSO/alias/apigee-saml-login-opdk"
+                                     index="1"/>
+    </md:SPSSODescriptor>
+</md:EntityDescriptor>
