@@ -1,37 +1,35 @@
-IP1=hostname_or_ip_of_apigge_sso
-
 # Comma separated list of URLs for the Edge UI,
 # in the format:  http_or_https://IP_or_hostname_of_UI:9000.
 # You can have multiple URLs when you have multiple installations
 # of the Edge UI or you have multiple data centers.
-EDGEUI_PUBLIC_URIS=http_or_https://IP_or_hostname_of_UI:9000
+EDGEUI_PUBLIC_URIS={{ edgeui_public_uris }}
 
 # Publicly accessible URLs for Edge UI.
-EDGEUI_SSO_REGISTERD_PUBLIC_URIS=$EDGEUI_PUBLIC_URIS
+EDGEUI_SSO_REGISTERD_PUBLIC_URIS={{ edgeui_public_uris }}
 
 # Required variables
 # Default is "n" to disable SAML support.
-EDGEUI_SSO_ENABLED=y
+EDGEUI_SSO_ENABLED={{ edgeui_sso_enabled }}
 
 # Information about apigee-sso.
 # Externally accessible IP or DNS of apigee-sso.
-SSO_PUBLIC_URL_HOSTNAME=$IP1
-SSO_PUBLIC_URL_PORT=9099
+SSO_PUBLIC_URL_HOSTNAME={{ pgmaster_ip | default(pg_ip) }}
+SSO_PUBLIC_URL_PORT={{ sso_public_url_port }}
 # Default is http. Set to https if you enabled TLS on apigee-sso.
-SSO_PUBLIC_URL_SCHEME=http
+SSO_PUBLIC_URL_SCHEME={{ sso_public_url_scheme }}
 
 # SSO admin credentials as set when you installed apigee-sso.
-SSO_ADMIN_NAME=ssoadmin
-SSO_ADMIN_SECRET=Secret123
+SSO_ADMIN_NAME={{ sso_admin_name }}
+SSO_ADMIN_SECRET={{ sso_admin_secret }}
 
 # The name of the OAuth client used to connect to apigee-sso.
 # The default client name is edgeui.
-EDGEUI_SSO_CLIENT_NAME=edgeui
+EDGEUI_SSO_CLIENT_NAME={{ edgeui_sso_client_name }}
 # Oauth client password using uppercase, lowercase, number, and special chars.
-EDGEUI_SSO_CLIENT_SECRET=ssoClient123
+EDGEUI_SSO_CLIENT_SECRET={{ edgeui_sso_client_secret }}
 
 # If set, the existing EDGEUI client is deleted and new one is created.
 # The default value is "n".
 # Set to "y" when you configure SAML and change the value of
 # any of the EDGEUI_* properties.
-EDGEUI_SSO_CLIENT_OVERWRITE=y
+EDGEUI_SSO_CLIENT_OVERWRITE={{ edgeui_sso_client_overwrite }}

@@ -1,2 +1,13 @@
 ---
 # defaults file for apigee-opdk-setup-edge-saml-config/
+edgeui_response_file_name: edge-ui-sample-response.conf
+edgeui_response_file_path: "{{ opdk_installer_path }}/{{ edgeui_response_file_name }}"
+edgeui_public_uris: http://{{ local_mgmt_ip }}:9000
+edgeui_sso_enabled: y
+sso_public_url_port: 9099
+sso_public_url_scheme: http
+sso_admin_name: ssoadmin
+sso_admin_secret: Apigee123!
+edgeui_sso_client_name: edgeui
+edgeui_sso_client_secret: Apigee123!
+edgeui_sso_client_overwrite: y
