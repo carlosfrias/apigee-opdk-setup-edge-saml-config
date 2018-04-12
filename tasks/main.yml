@@ -10,6 +10,7 @@
   - { key: 'edgeui_public_uris', value: '{{ edgeui_public_uris }}' }
 
 - name: Create Edge UI Response File
+  become: true
   template:
     src: "{{ edgeui_response_file_name }}.j2"
     dest: "{{ edgeui_response_file_path }}"
