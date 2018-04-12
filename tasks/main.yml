@@ -14,3 +14,6 @@
     src: "{{ edgeui_response_filename }}"
     dest: "{{ edgeui_response_file_path }}"
     mode: 0644
+
+- name: Configure SSO on Edge UI
+  shell: "/opt/apigee/apigee-service/bin/apigee-service edge-ui configure-sso -f {{ edgeui_response_file_path }}"
