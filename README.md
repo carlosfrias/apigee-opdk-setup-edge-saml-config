@@ -15,7 +15,7 @@ Role Variables
 | Variable Name | Description |
 | --- | --- |
 | edgeui_response_file_name | edge-ui-sample-response.conf |
-| edgeui_response_file_path | "{{ opdk_installer_path }}/{{ edgeui_response_file_name }}" |
+| edgeui_response_file_path | "{{ opdk_resources_path }}/{{ edgeui_response_file_name }}" |
 | edgeui_public_uris | http://{{ local_mgmt_ip }}:9000 |
 | edgeui_sso_enabled | y |
 | sso_public_url_port | 9099 |
