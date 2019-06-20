@@ -2,12 +2,10 @@
 # tasks file for apigee-opdk-setup-edge-saml-config/
 
 - name: Update cache with key and value
-  cache:
-    key: "{{ item.key }}"
-    value: "{{ item.value }}"
-  with_items:
-  - { key: 'edgeui_response_file_path', value: '{{ edgeui_response_file_path }}' }
-  - { key: 'edgeui_public_uris', value: '{{ edgeui_public_uris }}' }
+  set_fact:
+    cacheable: yes
+    edgeui_response_file_path: '{{ edgeui_response_file_path }}'
+    edgeui_public_uris: '{{ edgeui_public_uris }}'
 
 - name: Create Edge UI Response File
   become: true
