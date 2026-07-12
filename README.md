@@ -57,6 +57,9 @@ Carlos Frias
 
 # Not Google Product Clause
 
+> 🔄 **Evolution note:** The automation approach from this OPDK-era role has been consolidated into the `apigee-hybrid-workspace` Ansible collection. See the successor capability in the portfolio hub: [`carlosfrias/apigee-hybrid-workspace`](https://github.com/carlosfrias/apigee-hybrid-workspace) → `bap_coe/private_cloud/` and `bap_coe/apigee_hybrid/`. The collection README explains each role group’s business value and production context.
+
+
 This is not an officially supported Google product.
 <!-- END Google Required Disclaimer -->
 <!-- BEGIN Google How To Contribute -->
